@@ -9,7 +9,7 @@ const imgEl = galleryItems
 	.map(({preview, original, description}) => 
 		`
 			<a class="gallery__item" href="${original}">
-				<img class="gallery__image" src=${preview} data-source="${original}" alt=${description}></img>
+				<img class="gallery__image" src="${preview}" data-source="${original}" alt="${description}"></img>
 			</a>
 		`)
 	.join("");

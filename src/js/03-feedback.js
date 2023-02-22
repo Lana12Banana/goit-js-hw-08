@@ -13,10 +13,9 @@ const params = {
 
 function handleFormSubmit(event) {
   event.preventDefault();
+  console.log(dataSet);
   event.target.reset();
   localStorage.removeItem(CONTACT_FROM_LS_KEY);
-  dataSet = {};
-  console.log(dataSet);
 }
 
 function formInput({target}) {
